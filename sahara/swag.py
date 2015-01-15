@@ -19,7 +19,7 @@ import UserDict
 
 def from_flask(app, version):
     '''return a Swagger from a Flask App.
-   
+
     :param app: The Flask App object
     :param version: The version string
     :return: A populated Swagger object
