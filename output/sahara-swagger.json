@@ -1,0 +1,607 @@
+{
+  "swagger": "2.0", 
+  "info": {
+    "title": "sahara.api", 
+    "version": "2015.1"
+  }, 
+  "paths": {
+    "/": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>/convert-config/<name>": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/config-hints/<job_type>.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/config-hints/<job_type>.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>/data.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>/data.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates/<node_group_template_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates/<node_group_template_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<name>.json": {
+      "put": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates/<node_group_template_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates/<node_group_template_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<name>.xml": {
+      "put": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>/data": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates/<cluster_template_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates/<cluster_template_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates/<cluster_template_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates/<cluster_template_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/refresh-status.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/refresh-status.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/refresh-status": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/cancel.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/cancel.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>/cancel": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>/data.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>/data.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources/<data_source_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources/<data_source_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>/data": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters/<cluster_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters/<cluster_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters/<cluster_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters/<cluster_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>/<version>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>/<version>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/untag.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/untag.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/untag.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/untag.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/tag.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/tag.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/tag.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/tag.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/untag": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/untag": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>/tag": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>/tag": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/config-hints/<job_type>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>/execute.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>/execute.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>/execute": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>.json": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>.xml": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates/<node_group_template_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates/<node_group_template_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<name>": {
+      "put": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals/<job_binary_internal_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates/<cluster_template_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates/<cluster_template_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions/<job_execution_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources/<data_source_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries/<job_binary_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters/<cluster_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters/<cluster_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins/<plugin_name>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins/<plugin_name>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/images/<image_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/images/<image_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs/<job_id>": {
+      "options": {}, 
+      "delete": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/node-group-templates": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/node-group-templates": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binary-internals": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/cluster-templates": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/cluster-templates": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/job-executions": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/data-sources": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/job-binaries": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/images.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/images.json": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/images.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/images.xml": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs.json": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/clusters": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/clusters": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs.xml": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/v1.0/<tenant_id>/plugins": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/plugins": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.0/<tenant_id>/images": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/images": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }, 
+    "/v1.1/<tenant_id>/jobs": {
+      "post": {}, 
+      "options": {}
+    }, 
+    "/static/<path:filename>": {
+      "head": {}, 
+      "options": {}, 
+      "get": {}
+    }
+  }
+}
