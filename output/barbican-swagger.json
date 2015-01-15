@@ -1,0 +1,56 @@
+{
+  "swagger": "2.0", 
+  "info": {
+    "version": "2015.1.dev32", 
+    "title": "barbican"
+  }, 
+  "paths": {
+    "/v1": {}, 
+    "/v1/orders/<order_id>": {
+      "put": {}, 
+      "get": {}, 
+      "delete": {}
+    }, 
+    "/v1/orders": {
+      "put": {}, 
+      "post": {}, 
+      "get": {}
+    }, 
+    "/v1/transport_keys/<transport_key_id>/consumers/<consumer_id>": {
+      "get": {}
+    }, 
+    "/v1/transport_keys/<transport_key_id>": {
+      "get": {}, 
+      "delete": {}
+    }, 
+    "/v1/containers/<container_id>": {
+      "get": {}, 
+      "delete": {}
+    }, 
+    "/v1/secrets": {
+      "post": {}, 
+      "get": {}
+    }, 
+    "/v1/secrets/<secret_id>": {
+      "put": {}, 
+      "get": {}, 
+      "delete": {}
+    }, 
+    "/v1/transport_keys": {
+      "post": {}, 
+      "get": {}
+    }, 
+    "/v1/transport_keys/<transport_key_id>/consumers": {
+      "post": {}, 
+      "get": {}, 
+      "delete": {}
+    }, 
+    "/v1/containers": {
+      "post": {}, 
+      "get": {}
+    }, 
+    "/<performance_uri": {
+      "get": {}
+    }
+  }
+}
