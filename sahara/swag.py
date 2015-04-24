@@ -31,48 +31,49 @@ def from_flask(app, version):
     for rule in app.url_map.iter_rules():
         pathitem = PathItem()
         for method in rule.methods:
-            pathitem.add_operation(method)
+            pathitem.add_operation(method, rule.endpoint)
         paths.add(rule.rule, pathitem)
     swagger = Swagger(info, paths)
     return swagger
 
 
-class Info(collections.OrderedDict):
+class Info(dict):
     def __init__(self, title, version):
         super(Info, self).__init__()
         self['title'] = title
         self['version'] = version
 
 
-class Operation(collections.OrderedDict):
-    def __init__(self):
-        super(Operation, self).__init__()
+class Operation(dict):
+    def __init__(self, endpoint, *args, **kwargs):
+        super(Operation, self).__init__(*args, **kwargs)
+        self['x-endpoint-func'] = endpoint
 
 
-class PathItem(collections.OrderedDict):
-    valid_operations = ( 'get',
-                         'put',
-                         'post',
-                         'delete',
-                         'options',
-                         'head',
-                         'patch')
+class PathItem(dict):
+    valid_operations = ( 'GET',
+                         'PUT',
+                         'POST',
+                         'DELETE',
+                         'OPTIONS',
+                         'HEAD',
+                         'PATCH')
     def __init__(self):
         super(PathItem, self).__init__()
 
-    def add_operation(self, operation):
-        if operation.lower() not in self.valid_operations:
+    def add_operation(self, operation, endpoint):
+        if operation.upper() not in self.valid_operations:
             raise Exception('operation {} not valid'.format(operation))
-        self[operation.lower()] = Operation()
+        self[operation.upper()] = Operation(endpoint)
 
-class Paths(collections.OrderedDict):
+class Paths(dict):
     def __init__(self):
         super(Paths, self).__init__()
 
     def add(self, route, pathitem):
         self[route] = pathitem
 
-class Swagger(collections.OrderedDict):
+class Swagger(dict):
     def __init__(self, info, paths):
         super(Swagger, self).__init__()
         self['swagger'] = '2.0'
